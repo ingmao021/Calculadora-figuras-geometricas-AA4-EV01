@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Figuras Geométricas</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/square.css">
+</head>
+<body>
+    <header class="header-container">
+        <section class="header-container-logo">
+            <div class="header-container-logo-img">
+                <img src="/assets/icon/icon.png" alt="Icon of the website" />
+            </div>
+            <div class="header-container-logo-title">
+                <h3>Calculadora de Figuras Geométricas</h3>
+            </div>
+        </section>
+        <section class="header-container-home">
+            <a href="/index.html">
+                <img src="/assets/icon/home.svg" alt="home of the website" />
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="title-main">Calcula el área y perímetro de un cuadrado</h2>
+            <form>
+                <label for="InputCuadrado">
+                    Escribe cuánto mide cada lado de tu cuadrado:
+                </label>
+                <input class="main-container-input" id="InputCuadrado" type="number" placeholder="Lado del cuadrado"/>
+                <button class="main-container-button" type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+                <button class="main-container-button" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+                <p id="resultSquare"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="/assets/icon/icon.png" alt="Icon of the website" />
+            </div>
+            <div class="footer-container-title">
+                <h3>Calculadora de Figuras Geométricas</h3>
+            </div>
+        </div>
+        <div class="footer-container-development">
+            <h3>Sitio web desarrollado por: <a href="https://github.com/ingmao021" target="_blank">Anderson Mauricio Ordoñez Zuñiga</a></h3>
+       </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+</body>
+</html>

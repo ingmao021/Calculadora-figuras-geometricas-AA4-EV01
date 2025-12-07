@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Figuras Geométricas</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cono.css">
+</head>
+<body>
+    <header class="header-container">
+        <section class="header-container-logo">
+            <div class="header-container-logo-img">
+                <img src="/assets/icon/icon.png" alt="Icon of the website" />
+            </div>
+            <div class="header-container-logo-title">
+                <h3>Calculadora de Figuras Geométricas</h3>
+            </div>
+        </section>
+        <section class="header-container-home">
+            <a href="/index.html">
+                <img src="/assets/icon/home.svg" alt="home of the website" />
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="title-main">Calcular el área y volumen de un cono</h2>
+            <form action="">
+                <label for="inputConoRadio">Radio del cono:</label>
+                <input class="main-container-input" id="inputConoRadio" type="number" placeholder="Radio"/>
+                
+                <label for="inputConoGeneratriz">Generatriz del cono:</label>
+                <input class="main-container-input" id="inputConoGeneratriz" type="number" placeholder="Generatriz"/>
+                
+                <label for="inputConoAltura">Altura del cono:</label>
+                <input class="main-container-input" id="inputConoAltura" type="number" placeholder="Altura"/>
+                
+                <button class="main-container-button" type="button" onclick="calcularAreaCono()">Calcular el área</button>
+                <button class="main-container-button" type="button" onclick="calcularVolumenCono()">Calcular el volumen</button>
+                <p id="resultCono"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="/assets/icon/icon.png" alt="Icon of the website" />
+            </div>
+            <div class="footer-container-title">
+                <h3>Calculadora de Figuras Geométricas</h3>
+            </div>
+        </div>
+        <div class="footer-container-development">
+            <h3>Sitio web desarrollado por: <a href="https://github.com/ingmao021" target="_blank">Anderson Mauricio Ordoñez Zuñiga</a></h3>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
